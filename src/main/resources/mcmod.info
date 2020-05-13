@@ -1,0 +1,16 @@
+[
+{
+  "modid": "smallfix",
+  "name": "SmallFix",
+  "description": "Fix some small bugs.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Windmill_City"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
