@@ -3,8 +3,6 @@ package city.windmill;
 import com.chocohead.AdvMachines.te.TileEntityHeatingMachine;
 import ic2.api.recipe.IMachineRecipeManager;
 import ic2.api.recipe.IRecipeInput;
-import ic2.api.upgrade.IUpgradableBlock;
-import ic2.core.block.IInventorySlotHolder;
 import ic2.core.block.TileEntityInventory;
 import ic2.core.block.invslot.InvSlotOutput;
 import ic2.core.block.invslot.InvSlotProcessableGeneric;
