@@ -96,8 +96,7 @@ dependencies {
     }
     compile 'net.industrial-craft:industrialcraft-2:2.8.197-ex112'
     compile files("libs/Advanced+Machines-61.0.1.jar")
-    //compile "mcjty.theoneprobe:TheOneProbe-" + top_version
-    //compile "mezz.jei:jei_" + jei_version
+    compile files("libs/CustomOreGen-1.12-1.8.1.jar")
 }
 
 jar {
