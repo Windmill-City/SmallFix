@@ -13,6 +13,7 @@ buildscript {
 
 plugins {
     id 'com.matthewprenger.cursegradle' version '1.4.0'
+    id "com.wynprice.cursemaven" version "2.1.4"
 }
 
 curseforge {
@@ -95,8 +96,8 @@ dependencies {
         transitive = false
     }
     compile 'net.industrial-craft:industrialcraft-2:2.8.197-ex112'
-    compile files("libs/Advanced+Machines-61.0.1.jar")
-    compile files("libs/CustomOreGen-1.12-1.8.1.jar")
+    compile "curse.maven:advanced-machines:2667002"
+    compile "curse.maven:customoregen:2568549"
 }
 
 jar {

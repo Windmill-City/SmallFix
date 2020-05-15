@@ -1,6 +1,6 @@
 {
   "package": "city.windmill",
-  "required": true,
+  "required": false,
   "target": "@env(DEFAULT)",
   "minVersion": "0.8",
   "compatibilityLevel": "JAVA_8",
