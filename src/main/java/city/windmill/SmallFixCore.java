@@ -11,8 +11,10 @@ import java.util.Map;
 
 @IFMLLoadingPlugin.Name("SmallFixCore")
 @IFMLLoadingPlugin.MCVersion("1.12.2")
+@IFMLLoadingPlugin.SortingIndex(1200)
 public class SmallFixCore implements IFMLLoadingPlugin {
     public static Logger LOGGER = LogManager.getLogger("SmallFixCore");
+    public static boolean isDeobf = false;
 
     public SmallFixCore() {
         LOGGER.info("setting up mixin environment");
@@ -21,7 +23,9 @@ public class SmallFixCore implements IFMLLoadingPlugin {
     }
     @Override
     public String[] getASMTransformerClass() {
-        return new String[0];
+        return new String[]{
+                IntegratedServerTrans.class.getName()
+        };
     }
 
     @Override
@@ -37,7 +41,7 @@ public class SmallFixCore implements IFMLLoadingPlugin {
 
     @Override
     public void injectData(Map<String, Object> data) {
-
+        isDeobf = !(boolean) data.get("runtimeDeobfuscationEnabled");
     }
 
     @Override
